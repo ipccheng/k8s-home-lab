@@ -31,7 +31,7 @@ A file "Vagrantfile" will be created.
 
 ![alt text](https://raw.githubusercontent.com/ipccheng/k8s-home-lab/master/Figure-1.JPG)
 
-**4. Download the zip file from Github and uncompress it. Make sure the uncompressed .yml files and "Vagrantfile" are in the directory you have created in Step 2**
+**4. Download the zip file from Github and uncompress it. Make sure the uncompressed .yml files and "Vagrantfile" are in the directory you have created in Step 2. "Vagrantfile" should replace the original one created in Step 2**
 
 **5. Set up the K8S Master Node on the host**
 

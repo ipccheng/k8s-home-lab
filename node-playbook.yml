@@ -2,6 +2,8 @@
 - hosts: all
   gather_facts: no
   become: true
+  vars: 
+    k8s_os_version: kubernetes-xenial
   tasks:
   - name: Install packages that allow apt to be used over HTTPS
     apt:
@@ -35,7 +37,7 @@
 
   - name: Adding apt repository for Kubernetes
     apt_repository:
-      repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+      repo: deb https://apt.kubernetes.io/ "{{k8s_os_version}}" main
       state: present
       filename: kubernetes.list
 

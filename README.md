@@ -29,7 +29,7 @@ A file "Vagrantfile" will be created.
 
 **3. Append IP address of your host to the end of file /etc/ansible/hosts**
 
-![alt text](https://raw.githubusercontent.com/ipccheng/k8s-home-lab/master/Figure-1.png)
+![alt text](https://raw.githubusercontent.com/ipccheng/k8s-home-lab/master/Figure-1.JPG)
 
 **4. Download and Unzip the file under the directory you have created in Step 2"**
 
@@ -73,4 +73,4 @@ Edit the new "Vagrantfile" file created in Step 4 and you may change the propert
 
 `kubectl get nodes`
 
-![alt text](https://raw.githubusercontent.com/ipccheng/k8s-home-lab/master/Figure-2.png)
+![alt text](https://raw.githubusercontent.com/ipccheng/k8s-home-lab/master/Figure-2.JPG)

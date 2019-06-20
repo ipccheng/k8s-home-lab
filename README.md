@@ -25,13 +25,13 @@ vagrant init ubuntu/bionic64
 
 A file "Vagrantfile" will be created.
 
-"ubuntu/bionic64" is referring to Ubuntu 18.04. Other OS (i.e., Vagrant Boxes) are listed on https://app.vagrantup.com/boxes/search
+"ubuntu/bionic64" is referring to Ubuntu 18.04. Vagrant boxes of other OS are listed on https://app.vagrantup.com/boxes/search
 
 **3. Append IP address of your host to the end of file /etc/ansible/hosts**
 
 ![alt text](https://raw.githubusercontent.com/ipccheng/k8s-home-lab/master/Figure-1.JPG)
 
-**4. Download and Unzip the file under the directory you have created in Step 2"**
+**4. Download and Unzip the file under the directory you have created in Step 2**
 
 **5. Set up the K8S Master Node on the host**
 
@@ -64,7 +64,7 @@ Edit the new "Vagrantfile" file created in Step 4 and you may change the propert
 - number of Worker Nodes (default: 3)
 - hostnames
 - vCPU per nodes (default: 2)
-- memory per nodes (default: 2GB)
+- memory per nodes (default: 2048)
 - IP address range
 
 `vagrant up`

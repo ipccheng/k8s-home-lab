@@ -67,6 +67,8 @@ Edit the new "Vagrantfile" file created in Step 4 and you may change the propert
 - memory per nodes (default: 2048)
 - IP address range
 
+Then run
+
 `vagrant up`
 
 **8. Done! Now check the status of your K8S environment**
@@ -74,3 +76,8 @@ Edit the new "Vagrantfile" file created in Step 4 and you may change the propert
 `kubectl get nodes`
 
 ![alt text](https://raw.githubusercontent.com/ipccheng/k8s-home-lab/master/Figure-2.JPG)
+
+The Kubernetes Dashboard should also be running. On the web browser of the host (i.e., the master node), go to http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+
+![alt text](https://raw.githubusercontent.com/ipccheng/k8s-home-lab/master/Figure-3.JPG)
+

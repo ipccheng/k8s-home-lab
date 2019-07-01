@@ -25,7 +25,7 @@ vagrant init ubuntu/bionic64
 
 A file "Vagrantfile" will be created.
 
-"ubuntu/bionic64" is referring to Ubuntu 18.04. Vagrant boxes of other OS are listed on https://app.vagrantup.com/boxes/search
+"ubuntu/bionic64" refers to Ubuntu 18.04. Vagrant boxes of other OS are listed on https://app.vagrantup.com/boxes/search
 
 **3. Append IP address of your host to the end of file /etc/ansible/hosts**
 
@@ -44,11 +44,11 @@ First, edit the master-playbook.yml and edit the "vars" values. The attributes a
 
 Then dry run the master-playbook.yml first and edit the playbook if needed.
 
-`ansible-playbook --connection:local master-playbook.yml --check -vvv`
+`ansible-playbook --connection=local master-playbook.yml --check -vvv`
 
 If everything seems OK, run
 
-`ansible-playbook --connection:local master-playbook.yml`
+`ansible-playbook --connection=local master-playbook.yml`
 
 **6. Check whether the K8S master node is running**
 

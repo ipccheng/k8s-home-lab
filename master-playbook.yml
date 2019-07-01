@@ -5,9 +5,9 @@
   become: true
   vars:
     home_directory: /home/administrator/
-    cni_provider: https://docs.projectcalico.org/v3.7/manifests/calico.yaml
+    cni_provider: https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
     master_node_ip_address: 192.168.1.100
-    pod_network: 10.10.0.0/16    
+    pod_network: 10.244.0.0/16    
   tasks:
   - name: autostart Kubelet
     systemd:
